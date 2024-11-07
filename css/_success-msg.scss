@@ -12,7 +12,7 @@
     opacity: 0;
     transform: translateX(4rem);
     pointer-events: none;
-    transition: all 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
 
     &__content {
         display: flex;

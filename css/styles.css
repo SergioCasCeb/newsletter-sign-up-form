@@ -247,7 +247,7 @@ button:hover, button:focus {
   opacity: 1;
   transform: translateX(0);
   pointer-events: all;
-  transition: all 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
 }
 .newsletter__image {
   width: 100%;
@@ -361,7 +361,7 @@ button:hover, button:focus {
   opacity: 0;
   transform: translateX(4rem);
   pointer-events: none;
-  transition: all 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
 }
 .success-msg__content {
   display: flex;

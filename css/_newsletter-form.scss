@@ -9,7 +9,7 @@
     opacity: 1;
     transform: translateX(0);
     pointer-events: all;
-    transition: all 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
 
     &__image {
         width: 100%;
