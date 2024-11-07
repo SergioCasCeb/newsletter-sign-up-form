@@ -307,7 +307,7 @@ button:hover, button:focus {
 
 @media screen and (min-width: 31rem) {
   .newsletter {
-    border-radius: 20px;
+    border-radius: 30px;
     min-height: unset;
     overflow: hidden;
     box-shadow: 0px 4px 15px var(--clr-neutral-800);
