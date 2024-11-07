@@ -6,10 +6,15 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    transition: all 400ms ease-in-out;
 
     &__image {
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%;
@@ -17,7 +22,7 @@
         }
     }
 
-    &__info{
+    &__info {
         flex: 1;
         width: 100%;
         padding: var(--sp-28) var(--sp-20);
@@ -35,20 +40,17 @@
         justify-content: center;
         gap: var(--sp-20);
 
-        &__title {
-            font-size: var(--fs-xlg);
-        }
-
         &__benefits {
             display: flex;
             flex-direction: column;
             gap: var(--sp-8);
-            .benefit{
+
+            .benefit {
                 display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: var(--sp-12);
-                
+
                 i {
                     color: var(--clr-primary-500);
                     font-size: var(--fs-lg);
@@ -65,23 +67,30 @@
         justify-content: center;
         gap: var(--sp-20);
     }
+
+    &.hide {
+        opacity: 0;
+        transform: translateX(-4rem);
+        pointer-events: none;
+    }
 }
 
 @media screen and (min-width: 31rem) {
     .newsletter {
         border-radius: 20px;
-        min-height: unset; 
+        min-height: unset;
         overflow: hidden;
         box-shadow: 0px 4px 15px var(--clr-neutral-800);
-        
+
         &__image {
             padding: var(--sp-20) var(--sp-20) 0 var(--sp-20);
+
             img {
                 border-radius: 20px;
             }
         }
 
-        &__info{
+        &__info {
             flex: 1;
             width: 100%;
             padding: var(--sp-20);
@@ -104,12 +113,13 @@
             order: 1;
             padding: var(--sp-20) var(--sp-20) var(--sp-20) 0;
             flex: 1;
+
             img {
                 border-radius: 10px;
             }
         }
 
-        &__info{
+        &__info {
             padding: var(--sp-20)var(--sp-56);
         }
     }

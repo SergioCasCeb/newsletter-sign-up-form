@@ -31,15 +31,15 @@
 
   <main>
     <div class="container">
-      <div class="newsletter">
+
+      <div class="newsletter" id="newsletter">
         <div class="newsletter__image">
           <picture>
             <source srcset="/assets/images/illustration-sign-up-desktop.svg" media="(min-width: 48rem)">
-            <img src="/assets/images/illustration-sign-up-mobile.svg" alt="Product Image">
+            <img src="/assets/images/illustration-sign-up-mobile.svg" alt="Newsletter image">
           </picture>
         </div>
         <div class="newsletter__info">
-
           <div class="newsletter-description">
             <h1 class="newsletter-description__title">Stay Updated!</h1>
             <p class="newsletter-description__invitation">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -71,29 +71,21 @@
           </form>
         </div>
       </div>
-      <!-- <div class="success-msg"></div> -->
+
+      <div class="success-msg" id="success-msg">
+        <div class="success-msg__content">
+          <div class="success-image">
+            <img src="/assets/images/icon-success.svg" alt="success image">
+          </div>
+          <h2 class="title">Thanks for subscribing!</h2>
+          <p class="confirmation-text">A confirmation email has been sent to <span class="confirmation-email" id="confirmation-email">ash@lorecompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <div class="success-msg__btn">
+          <button class="dismiss-btn" id="dismiss-btn">Dismiss message</button>
+        </div>
+      </div>
     </div>
   </main>
-
-  <!-- Sign-up form start -->
-
-  <!-- Stay updated!
-
-
-  Subscribe to monthly newsletter -->
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
 
   <footer>
     <div class="container">

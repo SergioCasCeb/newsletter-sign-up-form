@@ -121,6 +121,7 @@ h1,
 h2 {
     font-weight: var(--fw-bold);
     line-height: var(--lh-title);
+    font-size: var(--fs-xlg);
 }
 
 main {
@@ -167,6 +168,7 @@ footer {
  * Utilities
  */
 .container {
+    position: relative;
     height: 100%;
     width: 100%;
     max-width: 1440px;
@@ -184,63 +186,63 @@ footer {
     align-items: flex-start;
     justify-content: center;
     gap: var(--sp-4);
+}
 
-    label, .error-msg {
-        font-size: var(--fs-sm);
-        font-weight: var(--fw-bold);
+label, .error-msg {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+}
+
+input, button {
+    appearance: none;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: var(--sp-16);
+}
+
+input {
+    background-color: var(--clr-neutral-50);
+    border: 1px solid var(--clr-neutral-200);
+    color: var(--clr-neutral-800);
+
+    &:focus {
+        outline: 2px solid var(--clr-primary-500);
+        outline-offset: 1px;
     }
 
-    input, button {
-        appearance: none;
-        width: 100%;
-        border-radius: 8px;
-        border: none;
-        padding: var(--sp-16);
-    }
-
-    input {
-        background-color: var(--clr-neutral-50);
-        border: 1px solid var(--clr-neutral-200);
-        color: var(--clr-neutral-800);
-
-        &:focus {
-            outline: 2px solid var(--clr-primary-500);
-            outline-offset: 1px;
-        }
-
-        &.invalid{
-            background-color: var(--clr-primary-transparent);
-            border-color: var(--clr-primary-500);
-            color: var(--clr-primary-500);
-        }
-    }
-
-    .error-msg {
-        opacity: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        right: 0;
+    &.invalid{
+        background-color: var(--clr-primary-transparent);
+        border-color: var(--clr-primary-500);
         color: var(--clr-primary-500);
     }
+}
 
-    .error-msg {
-        &.show {
-            opacity: 1;
-            pointer-events: all;
-        }
+.error-msg {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--clr-primary-500);
+}
+
+.error-msg {
+    &.show {
+        opacity: 1;
+        pointer-events: all;
     }
+}
 
-    button {
-        color: var(--clr-neutral-50);
-        background-color: var(--clr-neutral-800);
-        font-weight: var(--fw-bold);
-        cursor: pointer;
-        transition: background-color 150ms ease-in-out;
+button {
+    color: var(--clr-neutral-50);
+    background-color: var(--clr-neutral-800);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
 
-        &:hover {
-            background-color: var(--clr-neutral-800-hvr);
-        }
+    &:hover, &:focus {
+        background-color: var(--clr-neutral-800-hvr);
     }
 }
 
@@ -256,3 +258,4 @@ footer {
 */
 
 @import "newsletter-form.scss";
+@import "success-msg.scss";
