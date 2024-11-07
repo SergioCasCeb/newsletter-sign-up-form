@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-form-with-scss-and-js-aMm-G1fB3d)
+- Live Site URL: [Netlify](https://fm-newsletter-form-challenge-sergio.netlify.app/)
 
 ## My process
 
