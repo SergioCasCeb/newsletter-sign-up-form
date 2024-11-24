@@ -62,6 +62,7 @@ figcaption {
  * Global styles
  */
 :root {
+  --clr-primary-shadow: hsla(4, 100%, 67%, 0.5);
   --clr-primary-500: hsl(4, 100%, 67%);
   --clr-primary-transparent: hsla(4, 100%, 67%, 0.2);
   --clr-neutral-800: hsl(234, 29%, 20%);
@@ -218,13 +219,13 @@ input.invalid {
 
 button {
   color: var(--clr-neutral-50);
-  background-color: var(--clr-neutral-800);
+  background: var(--clr-neutral-800);
   font-weight: var(--fw-bold);
   cursor: pointer;
-  transition: background-color 150ms ease-in-out;
 }
 button:hover, button:focus {
-  background-color: var(--clr-neutral-800-hvr);
+  background: linear-gradient(45deg, rgb(255, 82, 123) 0%, rgb(255, 106, 58) 100%);
+  box-shadow: 0px 10px 15px var(--clr-primary-shadow);
 }
 
 @media screen and (min-width: 31rem) {
